@@ -6,7 +6,7 @@ console = Console()
 
 def show_menu():
     table = Table(
-        title="📘 [bold cyan]OPCIONES[/bold cyan]",
+        title="📘 [bold cyan]TEORÍA DE CONJUNTOS[/bold cyan]",
         header_style="bold magenta",
         border_style="bright_blue",
         show_lines=True
@@ -14,9 +14,9 @@ def show_menu():
     table.add_column("Opción", justify="center", style="bold yellow", no_wrap=True)
     table.add_column("Descripción", style="white")
 
-    table.add_row("1", "📈  Idioma Español          ")
-    table.add_row("2", "🟰  Idioma Inglés           ")
-    table.add_row("3", "〽️  Concurrencia de Palabras")
+    table.add_row("1", "Idioma Español          ")
+    table.add_row("2", "Idioma Inglés            ")
+    table.add_row("3", "Concurrencia de Palabras")
     table.add_row("4", "🚪  Salir  ")
 
     console.print(Panel.fit(table, border_style="cyan", title="Menú Principal"))

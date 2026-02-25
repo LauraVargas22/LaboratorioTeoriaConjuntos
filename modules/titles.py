@@ -24,19 +24,19 @@ def show_lineal():
     console.print(Panel.fit(
         f"[green]{lineal}[/green]",
         border_style="green",
-        title="📈 Español"
+        title="Español"
     ))
 
 def show_quadratic():
     console.print(Panel.fit(
         f"[yellow]{quadratic}[/yellow]",
         border_style="yellow",
-        title="🟰 Inglés"
+        title="Inglés"
     ))
 
 def show_rational():
     console.print(Panel.fit(
         f"[purple]{rational}[/purple]",
         border_style="purple",
-        title="〽️ de Palabras"
+        title="Concurrencia de Palabras"
     ))
