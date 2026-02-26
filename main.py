@@ -47,7 +47,7 @@ while (isActive):
                 archivo_esp = "Text/caracteres_esp.txt"
                 archivo_ing = "Text/caracteres_eng.txt"
 
-                print("Concurrencia en archivos de caracteres:\n")
+                t.show_concurrencia()
                 print(f"{'Palabra':<10} {'Español':>10} {'Inglés':>10}")
                 print("-" * 32)
 

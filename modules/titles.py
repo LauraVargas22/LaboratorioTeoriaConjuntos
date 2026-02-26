@@ -16,27 +16,27 @@ def show_title():
     ))
 
 # Subtítulos
-lineal = pyfiglet.figlet_format("Idioma", font="small")
-quadratic = pyfiglet.figlet_format("Idioma", font="small")
-rational = pyfiglet.figlet_format("Concurrencia", font="small")
+espanol = pyfiglet.figlet_format("Espanol", font="standard")
+ingles = pyfiglet.figlet_format("Ingles", font="small")
+concurrencia = pyfiglet.figlet_format("Palabras", font="small")
 
-def show_lineal():
+def show_español():
     console.print(Panel.fit(
-        f"[green]{lineal}[/green]",
+        f"[green]{espanol}[/green]",
         border_style="green",
-        title="Español"
+        title="Frecuencia de Letras"
     ))
 
-def show_quadratic():
+def show_ingles():
     console.print(Panel.fit(
-        f"[yellow]{quadratic}[/yellow]",
+        f"[yellow]{ingles}[/yellow]",
         border_style="yellow",
-        title="Inglés"
+        title="Frecuencia de Letras"
     ))
 
-def show_rational():
+def show_concurrencia():
     console.print(Panel.fit(
-        f"[purple]{rational}[/purple]",
+        f"[purple]{concurrencia}[/purple]",
         border_style="purple",
-        title="Concurrencia de Palabras"
+        title="Concurrencia de"
     ))
