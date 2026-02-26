@@ -11,6 +11,7 @@ if (__name__=='__main__'):
     import modules.salir as sa
     import modules.leer_español as le
     import modules.leer_ingles as li
+    import modules.conteo_palabras as gc
 
 isActive = True
 while (isActive):
@@ -23,11 +24,13 @@ while (isActive):
             case 1:
                 """Idioma Español"""
                 cu.borrarPantalla()
+                le.conteo_frecuencias("Text/caracteres_esp.txt")
                 le.graficar_frecuencias("Text/caracteres_esp.txt")
                 cu.pausarPantalla()
             case 2:
                 """Idioma Inglés"""
                 cu.borrarPantalla()
+                li.conteo_frecuencias("Text/caracteres_eng.txt")
                 li.graficar_frecuencias("Text/caracteres_eng.txt")
                 cu.pausarPantalla()
             case 3: 
@@ -55,6 +58,8 @@ while (isActive):
                     c_esp = le.contar_ocurrencias(archivo_esp, palabra)
                     c_ing = li.contar_ocurrencias(archivo_ing, palabra)
                     print(f"{palabra:<10} {c_esp:>10} {c_ing:>10}")
+
+                gc.graficar_concurrencia(palabras, archivo_esp, archivo_ing)
                
                 cu.pausarPantalla()
             case 4:
