@@ -29,5 +29,7 @@ python main.py
 
 **Laura Mariana Vargas Rojas**  
 Estudiante Ingeniería en Ciencia de Datos
+
 💚 Universidad Industrial de Santander
+
 GitHub: [https://github.com/LauraVargas22](https://github.com/LauraVargas22)
